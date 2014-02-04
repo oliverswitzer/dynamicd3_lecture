@@ -9,6 +9,11 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(32," + (height/2) + ")");
 
+
+d3.csv("data.csv", function(error, data) {
+     // this is executed whenever the data is loaded;
+}); 
+
 // 1. Make an update function
 function update(data){
 
